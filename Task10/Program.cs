@@ -11,3 +11,14 @@
 // string stringNumber = Convert.ToString(threeDigitNumber);
 // Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
 
+Console.WriteLine("Введите трехзначное число");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number >= 100 && number <= 999)
+{
+    int numberLast = number /10 % 10;
+    Console.WriteLine(numberLast);
+}
+else
+{
+    Console.WriteLine("введите ТРЁХназное число");
+}
