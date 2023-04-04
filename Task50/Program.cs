@@ -14,9 +14,9 @@
 
 
 Console.WriteLine("введите номер строки");
-int n = int.Parse(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите номер столбца");
-int m = int.Parse(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
 int [,] myArray = CreateMatrixRndInt(3, 4, -10, 10);
 Console.WriteLine();
 PrintMatrix(myArray);
